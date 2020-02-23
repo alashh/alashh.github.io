@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Terraform Module Design - Part 1"
+title:  "Terraform Module Design - Part 1: Intro"
 date:   2020-02-16 17:00:32 -0500
 categories: terraform iaac concepts
 ---
