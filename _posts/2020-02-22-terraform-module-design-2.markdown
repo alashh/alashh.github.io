@@ -42,7 +42,7 @@ Therefore in our module we need to:
 
 This could be exceptionally complex as Terraform (as of Feb 2020) does not support exposure of the Load Balancer IP addresses from the ENI's, so we *could* scan them out using the terraform data provider and *then* we can scope it down to all ip addresses associated with the ALB and *then* put them in a data array and *then*....
 
-...No, things are going to wrong, we have started to over-engineer something that COULD be done, but SHOULD we...? Just create two Modules and hope that Hashicorp [Gets around to approving that pull request](https://github.com/terraform-providers/terraform-provider-aws/pull/2901).
+...No, things are going to wrong, we have started to over-engineer something that COULD be done, but SHOULD we...? Just create two Modules and hope that Hashicorp [Gets around to approving that pull request](https://github.com/terraform-providers/terraform-provider-aws/pull/2901). If we try to do this, sometimes you can get some very strange interactions (In the above case, I had to wait for the ALB to be created, hence creating a lock on when the NLB stood up, but the data scans wouldn't respect the dependence on the ALB being "100% Provisioned").
 
 A module without these complexities invokes our rule of ***Simplicity***. We don't want complex hacks and strange interactions outside the laws of Terraform, so when it's used by our consumers we don't deal with strange bugs.
 
