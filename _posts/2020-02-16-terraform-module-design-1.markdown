@@ -21,8 +21,8 @@ And maybe a few more. They are not really about writing the module or using spec
 
 But before all that...
 
-## Act 1: What even is a "Terraform Module"?
-The first thing to grasp is where a module lives in grand scheme of Terraform; [In a short sentence I stole from Hashicorp:](https://www.terraform.io/docs/modules/index.html)
+## Part 1: What even is a "Terraform Module"?
+So you may have used Terraform a little bit, and heard that everyone is using these Module things, so what do they do? The first thing to grasp is where a module lives in grand scheme of Terraform; [In a short sentence I stole from Hashicorp:](https://www.terraform.io/docs/modules/index.html)
 
 *A module is a container for multiple resources that are used together. Modules can be used to create lightweight abstractions, so that you can describe your infrastructure in terms of its architecture, rather than directly in terms of physical objects.*
 
@@ -48,8 +48,8 @@ The module author has wrote the module in such a way that he has abstracted the 
 Our module consumer only needs to answer the questions above to take advantage of this, and save himself from maybe accidentally spinning up a wide open S3 bucket, giving himself a shiny 'Insecure S3 Bucket of the Week' award that you see every few days in [*The Register*](https://www.theregister.co.uk/).
 
 
+## Continue?
+If you want to keep listening to me about this topic, i've continued my thoughts over in another post, going over the questions I ask myself as I build out these things.
 
-As I go through the above subjects, i'll also be writing a set of modules using some of the tenets and mantra's ive developed for myself through this. So Code snippets and real life examples will be available for use
-
-
+[Terraform Module Design - Part 2: Writing a Module]({% post_url 2020-02-22-terraform-module-design-2 %})
 
