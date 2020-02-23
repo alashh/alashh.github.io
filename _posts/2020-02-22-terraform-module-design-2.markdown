@@ -3,7 +3,10 @@ layout: post
 title:  "Terraform Module Design - Part 2: Writing a Module"
 date:   2020-02-22 23:00:32 -0500
 categories: terraform iaac concepts
---- 
+---
+
+*This is a continuation on my series around 'Terraform Module Design'. If you want to check out Part one: [Take a look here.]({% post_url 2020-02-16-terraform-module-design-1 %})*
+
 Now that we know what a module is, nothing is stopping you from writing a hugely complex module and orchestrate your entire infrastructure with only two values... But you probably don't want to.
 
 I consider there to be 3 salient points to module writing: ***Flexibility***, ***Simplicity*** and ***Defensive Terraform***.
