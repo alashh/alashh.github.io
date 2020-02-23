@@ -24,7 +24,9 @@ This module invokes ***Flexibility*** as it can now be used in multiple applicat
 
 ### Simplicity
 
-A module should be very simple. No overtly complex dependencies or hacks. Infrastructure as code can be a complex beast. While you will want to push as MUCH complexity into your module, you don't want it to fall over itself. A (real world) example can be something such as:
+A module should be very simple, no overtly complex dependencies or hacks. Our above "RDS Instance" Module had linked dependencies, but they were designed to be linked together, *and* Terraform has the logic to make sure this all fits nicely together and in order. 
+
+While you will want to push as MUCH complexity into your module, you don't want it to fall over itself and try build it too smart for it's own good. A (real world) example can be something such as:
 
 *We need a private Network Load Balancer (NLB) to be put in front of a private Application Load Balancer (ALB)*
 
@@ -36,7 +38,7 @@ Therefore in our module we need to:
 - Add the IP addresses to the NLB target Group
 
 
-This is exceptionally complex as Terraform (as of Feb 2020) does not support exposure of the Load Balacer IP addresses, so we *could* scan them out using the terraform data provider and *then* we can scope it down to all ip addresses associated with the ALB and *then* put them in a data array and *then*....
+This could be exceptionally complex as Terraform (as of Feb 2020) does not support exposure of the Load Balancer IP addresses from the ENI's, so we *could* scan them out using the terraform data provider and *then* we can scope it down to all ip addresses associated with the ALB and *then* put them in a data array and *then*....
 
 ...No, things are going to wrong, we have started to over-engineer something that COULD be done, but SHOULD we...? Just create two Modules and hope that Hashicorp [Gets around to approving that pull request](https://github.com/terraform-providers/terraform-provider-aws/pull/2901).
 
