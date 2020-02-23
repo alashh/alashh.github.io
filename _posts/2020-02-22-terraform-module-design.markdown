@@ -44,7 +44,7 @@ The consumer may only be asked to provide values for terraform such as:
 
 The module author has wrote the module in such a way that he has abstracted the complexity away, the module author has included all the security controls we would expect from the resources used to create this stack. 
 
-Our module consumer only needs to answer the questions above to take advantage of this, and save himself from maybe accidentally spinning up a wide open S3 bucket, giving himself a shiny 'Insecure S3 Bucket of the Week' award that you see every few days in [*The Register*](https://www.theregister.co.uk/)
+Our module consumer only needs to answer the questions above to take advantage of this, and save himself from maybe accidentally spinning up a wide open S3 bucket, giving himself a shiny 'Insecure S3 Bucket of the Week' award that you see every few days in [*The Register*](https://www.theregister.co.uk/).
 
 
 
