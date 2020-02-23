@@ -58,7 +58,7 @@ A module that doesn't have any kind of hard coupling or dependencies outside of 
 
 
 ### Examples and Further Reading
-#### Cloudposse Example Modules
+#### CloudPosse Example Modules
 The artists over at [CloudPosse](https://github.com/cloudposse) make some exceptional modules which follow a lot of these ideas and concepts. A great example from them is:
 - A VPC Module - <https://github.com/cloudposse/terraform-aws-vpc>. This creates a VPC.
 - A Subnet Module - <https://github.com/cloudposse/terraform-aws-dynamic-subnets>. This creates subnets
@@ -69,4 +69,4 @@ Together, these can be used to create a VPC with Subnets.
 - They are **Flexible**. We can use these modules in so many different patterns and use cases, the consumers can use this module from HPC Clusters to provisioning their EKS VPC.
 
 #### Capital One Terraform
-[Captial One](https://medium.com/capital-one-tech) has blogged about these concepts (and more) in a much better way than I did in the [Terraform Poka Yokes](https://medium.com/capital-one-tech/terraform-poka-yokes-writing-effective-scalable-dynamic-and-error-resistant-terraform-dcbd6a0ada6a) Article. It's a great read going over some of these ideas and was an affirmation of some of the stuff I had been harping on about these few years.
+[Capital One](https://medium.com/capital-one-tech) has blogged about these concepts (and more) in a much better way than I did in the [Terraform Poka Yokes](https://medium.com/capital-one-tech/terraform-poka-yokes-writing-effective-scalable-dynamic-and-error-resistant-terraform-dcbd6a0ada6a) Article. It's a great read going over some of these ideas and was an affirmation of some of the stuff I had been harping on about these few years.
