@@ -16,7 +16,8 @@ Over a few posts I want to go over a few of my ideas and opinions i've formed on
 - Anatomy and the 'Rules' of a good Module
 - Deploying a Module
 - Consuming a Module
-- Closing Thoughts.
+
+And maybe a few more. They are not really about writing the module or using specific technology, more just thoughts and ramblings behind the why.
 
 But before all that...
 

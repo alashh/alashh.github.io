@@ -57,5 +57,14 @@ We want to do the same for our modules, the size of our modules should be defens
 A module that doesn't have any kind of hard coupling or dependencies outside of itself can invoke our rule of ***Defensive Terraform***. So when an unexpected bomb goes off, we only lose one small ship in the fleet.
 
 
-### The technical implementation
-In the next part, we will begin to write a simple module and how we test this module with CI.
+### Examples and Further Reading
+The artists over at [CloudPosse](https://github.com/cloudposse) make some exceptional modules which follow a lot of these ideas and concepts. A great example from them is:
+- A VPC Module - <https://github.com/cloudposse/terraform-aws-vpc>. This creates a VPC
+- A Subnet Module - <https://github.com/cloudposse/terraform-aws-dynamic-subnets>. This creates subnets
+
+Together, these can be used to create a VPC with Subnets. 
+- They cover very **Defensive** units of infrastructure, small and contained
+- They are **Simple** only using what Terraform is good at, and not trying to hack in any strange complexities or dependencies
+- They are **Flexible**. We can use these modules in so many different patterns and use cases, the consumers can use this module from HPC Clusters to provisioning their EKS VPC.
+
+Capital One has blogged about these concepts (and more) in a much better way than I did: <https://medium.com/capital-one-tech/terraform-poka-yokes-writing-effective-scalable-dynamic-and-error-resistant-terraform-dcbd6a0ada6a>. It's a great read going over some of these ideas and was an affirmation of some of the stuff I had been harping on about these few years.
