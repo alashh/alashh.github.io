@@ -4,9 +4,11 @@ title:  "Terraform Module Design - Part 2: Writing a Module"
 date:   2020-02-15 23:00:32 -0500
 categories: terraform iaac concepts
 --- 
-Nothing is stopping you from writing a hugely complex module, and orchestrate your entire infrastructure with only two values, but you probably don't want to.
+Now that we know what a module is, nothing is stopping you from writing a hugely complex module and orchestrate your entire infrastructure with only two values... But you probably don't want to.
 
 I consider there to be 3 salient points to module writing: ***Flexibility***, ***Simplicity*** and ***Defensive Terraform***.
+
+Writing modules to be concise, small units focused on a singular task, without being *too* fancy is where we want to be. These mantras to me are:
 ### Flexibility
 
 A module should be a small unit, doing a singular, specific task, and is completely bulletproof. A good module could be:
@@ -54,6 +56,6 @@ We want to do the same for our modules, the size of our modules should be defens
 
 A module that doesn't have any kind of hard coupling or dependencies outside of itself can invoke our rule of ***Defensive Terraform***. So when an unexpected bomb goes off, we only lose one small ship in the fleet.
 
-### Tenets in Practice - Our Example Module
 
-Our example modules will be a simple S3 bucket, with the feature switch to allow for the use of Encryption with the built in AWS S3 KMS Key, or a Key of our choosing.
+### The technical implementation
+In the next part, we will begin to write a simple module and how we test this module with CI.
