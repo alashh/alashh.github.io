@@ -48,7 +48,7 @@ A module without these complexities invokes our rule of ***Simplicity***. We don
 
 ### Defensive Terraform
 
-This is about our lifecycles. We want our terraform to be in small, bite-sized pieces so that if something does go the way of the dodo by accident, we don't kill the whole infrastructure in the process.
+This is about our  infrastructure life cycles. We want our terraform to be in small, bite-sized pieces so that if something does go the way of the dodo by accident, we don't kill the whole infrastructure in the process.
 
 This practice has been termed *defensive terraform* as per this podcast i was influenced by: <https://packetpushers.net/podcast/full-stack-journey-027-understanding-infrastructure-as-code-and-terraform-with-curt-micol/>. The main part of this Podcast I take away is the fact your Terraform State should be as small and decoupled as possible.
 
