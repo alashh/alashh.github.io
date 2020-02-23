@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Terraform Module Design and Thoughts: Part 2"
+title:  "Terraform Module Design - Part 2: Writing a Module"
 date:   2020-02-15 23:00:32 -0500
 categories: terraform iaac concepts
 --- 
