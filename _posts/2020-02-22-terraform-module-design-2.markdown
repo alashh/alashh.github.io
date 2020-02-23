@@ -4,12 +4,10 @@ title:  "Terraform Module Design - Part 2: Writing a Module"
 date:   2020-02-15 23:00:32 -0500
 categories: terraform iaac concepts
 --- 
-### Act 2: Writing a Module
-
 Nothing is stopping you from writing a hugely complex module, and orchestrate your entire infrastructure with only two values, but you probably don't want to.
 
 I consider there to be 3 salient points to module writing: ***Flexibility***, ***Simplicity*** and ***Defensive Terraform***.
-#### Flexibility
+### Flexibility
 
 A module should be a small unit, doing a singular, specific task, and is completely bulletproof. A good module could be:
 
@@ -24,7 +22,7 @@ There are multiple resources here, all with intricate relationships to ensure th
 This module invokes ***Flexibility*** as it can now be used in multiple application stack use cases!
 
 
-#### Simplicity
+### Simplicity
 
 A module should be very simple. No overtly complex dependencies or hacks. Infrastructure as code can be a complex beast. While you will want to push as MUCH complexity into your module, you don't want it to fall over itself. A (real world) example can be something such as:
 
@@ -44,7 +42,7 @@ This is exceptionally complex as Terraform (as of Feb 2020) does not support exp
 
 A module without these complexities invokes our rule of ***Simplicity***. We don't want complex hacks and strange interactions outside the laws of Terraform, so when it's used by our consumers we don't deal with strange bugs.
 
-#### Defensive Terraform
+### Defensive Terraform
 
 This is about our lifecycles. We want our terraform to be in small, bite-sized pieces so that if something does go the way of the dodo by accident, we don't kill the whole infrastructure in the process.
 
@@ -52,13 +50,8 @@ This practice has been termed *defensive terraform* as per this podcast i was in
 
 We want to do the same for our modules, the size of our modules should be defensive in nature, so if a new version DOES end up not playing nicely with itself, we only affect a small part of the infrastructure, and a singular module isn't in charge controlling huge amounts of the stack.
 
-A module that doesn't have any kind of hard coupling or dependencies outside of itself can invoke our rule of ***Defensive Terraform**. So when an unexpected bomb goes off, we only lose one small ship in the fleet.
+A module that doesn't have any kind of hard coupling or dependencies outside of itself can invoke our rule of ***Defensive Terraform***. So when an unexpected bomb goes off, we only lose one small ship in the fleet.
 
+### Tenets in Practice - Our Example Module
 
-### Act 3: Deploying a Module
-
-
-### Act 4: Consuming a Module
-
-
-
+Our example modules will be a simple S3 bucket, with the feature switch to allow for the use of Encryption with the built in AWS S3 KMS Key, or a Key of our choosing.
