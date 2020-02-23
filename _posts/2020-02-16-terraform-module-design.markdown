@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Terraform Module Design - Part 1"
-date:   2020-02-16 23:00:32 -0500
+date:   2020-02-16 17:00:32 -0500
 categories: terraform iaac concepts
 ---
 I spend a good chunk of my day not so much deploying infrastructure, but creating the structures that go around the best ways to
