@@ -64,7 +64,7 @@ A module that doesn't have any kind of hard coupling or dependencies outside of 
 #### CloudPosse Example Modules
 The artists over at [CloudPosse](https://github.com/cloudposse) make some exceptional modules which follow a lot of these ideas and concepts. A great example from them is:
 - A VPC Module - <https://github.com/cloudposse/terraform-aws-vpc>. This creates a VPC.
-- A Subnet Module - <https://github.com/cloudposse/terraform-aws-dynamic-subnets>. This creates subnets
+- A Subnet Module - <https://github.com/cloudposse/terraform-aws-dynamic-subnets>. This creates subnets.
 
 Together, these can be used to create a VPC with Subnets. 
 - They cover very **Defensive** units of infrastructure, small and contained.
