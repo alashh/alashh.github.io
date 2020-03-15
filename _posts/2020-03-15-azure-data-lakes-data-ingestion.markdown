@@ -41,7 +41,9 @@ Now that I have some data, what do i plan to do with the above. Where do I plan 
 - Structure datasets for consumption
 - Query datasets to build a cohesive relation between them all.
 
-And the relation I want to find? *effects of the weather on Formula 1 results and if those results correlated to stock prices of the Title Sponsor.*
+And the relation I want to find? 
+
+***Effects of the weather on Formula 1 results and if those results correlated to stock prices of the Title Sponsor.***
 
 Pretty strange kind of relation but hey; it's an excuse to give this all a shot with some easy to query data that I don't need to make myself. I also think as I go I might add or find more info or may change the whole thing to some cool idea I find along the way.
 
