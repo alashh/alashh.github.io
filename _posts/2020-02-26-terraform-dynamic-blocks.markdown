@@ -2,7 +2,8 @@
 layout: post
 title:  "Terraform Dynamic Blocks"
 date:   2020-02-26 21:43:32 -0500
-categories: terraform iaac concepts
+categories: blog terraform
+tags: terraform iaac concepts
 ---
 
 Fielded a question from a colleague today on an issue he was having related to our Terraform S3 Bucket Module. We had a requirement to support [lifecycle Policies](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html), however we needed to support an indeterminate amount of these policies.

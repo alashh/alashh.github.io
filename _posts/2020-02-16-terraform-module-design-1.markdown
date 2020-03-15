@@ -2,7 +2,8 @@
 layout: post
 title:  "Terraform Module Design - Part 1: Intro"
 date:   2020-02-16 17:00:32 -0500
-categories: terraform iaac concepts
+categories: blog terraform
+tags: terraform iaac concepts
 ---
 I spend a good chunk of my day not so much deploying infrastructure, but creating the structures that go around the best ways to
 deploy said infrastructure. The types of people I encounter are also what i'd consider to be very smart, resourceful people but need a way to tap into the knowledge of people from the past, who have travelled the roads, built the bridges and created the post offices.

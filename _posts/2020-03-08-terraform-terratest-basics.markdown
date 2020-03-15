@@ -2,7 +2,8 @@
 layout: post
 title:  "Testing Terraform with Terratest"
 date:   2020-03-03 14:43:32 -0500
-categories: terraform iaac concepts terratest go
+categories: blog terraform
+tags: terraform iaac concepts terratest go
 ---
 A while back I was on the hunt for messing with Testing Frameworks for infrastructure. The use-case at the time was confirming if I could do some kind of nightly 'build' on AWS AMI's, spin it up and confirm the AMI was within spec. From this thoughts I was introduced into the messy world of testing infrastructure.
 
