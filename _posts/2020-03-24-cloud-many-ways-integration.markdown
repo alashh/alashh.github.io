@@ -4,6 +4,7 @@ title:  "Cloud Integrations: One App - Many Iterations"
 date:   2020-03-06 17:43:32 -0500
 categories: blog integration
 tags: blog azure aws integration smashlite
+published: false
 ---
 As is most of my posts it seems, a lot of these topics seem to be triggered by an interesting discussion i had with a fellow colleague. This one was related to some of the things I enjoy doing in my day-to-day. The topic in question was relating to the thing I have enjoyed the most over the years, and i'd say it has got to be taking an application and integrating it into the various cloud PaaS services at a best-practice level.
 
@@ -37,7 +38,8 @@ From the above, I plan to add in (in no specific order)
 - Cloud Hosted Caching
 - Cloud Object Storage
 - CDN
+- Search Databases for Indexing
 
-This will be done in both AWS and Azure, using their relevant services for each. The base logic will live in Containers for now however. I may refactor into Functions at some point but I think there is more value to be gained in just integrating (and adding) features right now/
+This will be done in both AWS and Azure, using their relevant services for each. The base logic will live in Containers for now however. I may refactor into Functions at some point but I think there is more value to be gained in just integrating (and adding) features right now.
 
 
