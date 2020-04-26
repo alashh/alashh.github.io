@@ -4,6 +4,7 @@ title:  "Azure Data Lakes P1: My Plans"
 date:   2020-03-06 17:43:32 -0500
 categories: blog azure
 tags: blog azure blob machine learning data lake hadoop hdinsight
+published: false
 ---
 I'm still learning a lot about data lakes, flows and ingestion. Almost every project I am involved in has some kind of data source, and those data sources are getting larger, and esoteric in their source (API, Stream, Relational!). It seems that we as an Industry have been able to collate and store hundreds of thousands of lines of data, but we've only now in the past few years been able to query it in an efficient way.
 
