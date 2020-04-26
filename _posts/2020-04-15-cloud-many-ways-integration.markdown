@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "Cloud Integrations: One App - Many Iterations"
-date:   2020-03-06 17:43:32 -0500
+date:   2020-04-15 17:43:32 -0500
 categories: blog integration
 tags: blog azure aws integration smashlite
-published: false
 ---
 As is most of my posts it seems, a lot of these topics seem to be triggered by an interesting discussion i had with a fellow colleague. This one was related to some of the things I enjoy doing in my day-to-day. The topic in question was relating to the thing I have enjoyed the most over the years, and i'd say it has got to be taking an application and integrating it into the various cloud PaaS services at a best-practice level.
 
@@ -22,12 +21,13 @@ So, we'll need a Control to base our app off, then we can apply our Integrations
 
 - Frontend: Static Content and JS/CSS
 - Cache: Session Management and API Query Caching
-- Middleware: Retrieving API calls from smash.gg
+- Middleware: Retrieving and caching API calls from smash.gg
 
 I think this is simple enough to start with, we can look at some kind of Account Database Auth and Database Storage later to theorize if people wanted to 'save' a certain bracket or render all brackers associated to a user.
 
 All the above will be built in Docker Containers as well for now. So the overall flow will look something like (again, bear with the napkin here)
 
+![useful image]({{ site.url }}/assets/cloud-many-ways-base.svg)
 
 So, a few containers, users talking directly to the frontend (no magic, again we want our control) and a redis cache alongside a middleware server doing the heavy lifting retrieving the datasets from Smash.gg.
 
@@ -41,5 +41,7 @@ From the above, I plan to add in (in no specific order)
 - Search Databases for Indexing
 
 This will be done in both AWS and Azure, using their relevant services for each. The base logic will live in Containers for now however. I may refactor into Functions at some point but I think there is more value to be gained in just integrating (and adding) features right now.
+
+Once the base app is wrote, and ready to go, we can start evolving it into a more 'cloud native' build application, using and integrating as much as we can from Amazon and Microsoft along the way. Through this I should be gaining a better understanding of the platforms, differences in integration points as well as the *eccentric* nature each platform has in store for me.
 
 
