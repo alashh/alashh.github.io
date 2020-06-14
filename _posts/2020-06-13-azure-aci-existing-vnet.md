@@ -152,11 +152,11 @@ And deploy with `az container create --resource-group ALASH-USC-ACITEST --file a
 ## The Conclusion
 So, it seems that this pattern is possible but you need to do some housekeeping
 - Specify the IDs of the Subnet/Vnet you want to deploy into
-- If you want to use YAML, you need an exisiting Network Profile to point at
+- If you want to use YAML, you need an existing Network Profile to point at
 - You can create network profiles by using the `az container create` command with all the relevant flags to create your container
 
 
-It would be pretty great if Azure let us create Network Profiles independently, there must be a reason why it's a little akward. I may be missing something obvious though, who knows! Maybe there will be an update to this little post proving how wrong I was.
+It would be pretty great if Azure let us create Network Profiles independently, there must be a reason why it's a little awkward. I may be missing something obvious though, who knows! Maybe there will be an update to this little post proving how wrong I was.
 
 
 
